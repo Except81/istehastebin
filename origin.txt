@@ -1,0 +1,28 @@
+Uri: https://paste.jaimitr.rf.gd/
+File Name: c:\Downloaded Web Sites\paste.jaimitr.rf.gd\index.htm
+Content Type: text/html
+
+Uri: https://paste.jaimitr.rf.gd/solarized_dark.css
+File Name: c:\Downloaded Web Sites\paste.jaimitr.rf.gd\solarized_dark.css
+Content Type: text/css
+
+Uri: https://paste.jaimitr.rf.gd/application.css
+File Name: c:\Downloaded Web Sites\paste.jaimitr.rf.gd\application.css
+Content Type: text/css
+
+Uri: https://paste.jaimitr.rf.gd/highlight.min.js
+File Name: c:\Downloaded Web Sites\paste.jaimitr.rf.gd\highlight.min.js
+Content Type: application/javascript
+
+Uri: https://paste.jaimitr.rf.gd/application.min.js
+File Name: c:\Downloaded Web Sites\paste.jaimitr.rf.gd\application.min.js
+Content Type: application/javascript
+
+Uri: https://paste.jaimitr.rf.gd/function-icons.png
+File Name: c:\Downloaded Web Sites\paste.jaimitr.rf.gd\function-icons.png
+Content Type: image/png
+
+Uri: https://paste.jaimitr.rf.gd/hover-dropdown-tip.png
+File Name: c:\Downloaded Web Sites\paste.jaimitr.rf.gd\hover-dropdown-tip.png
+Content Type: image/png
+

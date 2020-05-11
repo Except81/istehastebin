@@ -1,0 +1,133 @@
+<html>
+
+	<head>
+
+		<title>CFX.in</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="solarized_dark.css"/>
+		<link rel="stylesheet" type="text/css" href="application.css"/>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.glitch.com/827e6e80-819a-45de-9760-4ba26bce32a6%2FLogopit_1574782048404.jpg?v=1579540540456"/>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="highlight.min.js"></script>
+		<script type="text/javascript" src="application.min.js"></script>
+
+		<meta name="robots" content="noindex,nofollow"/>
+    <meta name="description" content="FENIX Development">
+    <meta property="og:image" content="https://cdn.glitch.com/827e6e80-819a-45de-9760-4ba26bce32a6%2Ff_dev.discordlogo.gif?v=1582313212746">
+    <meta name="theme-color" content="#00ff88">
+		<script type="text/javascript">
+			var app = null;
+			// Handle pops
+			var handlePop = function(evt) {
+				var path = evt.target.location.pathname;
+				if (path === '/') { app.newDocument(true); }
+				else { app.loadDocument(path.substring(1, path.length)); }
+			};
+			// Set up the pop state to handle loads, skipping the first load
+			// to make chrome behave like others:
+			// http://code.google.com/p/chromium/issues/detail?id=63040
+			setTimeout(function() {
+				window.onpopstate = function(evt) {
+					try { handlePop(evt); } catch(err) { /* not loaded yet */ }
+				};
+			}, 1000);
+			// Construct app and load initial path
+			$(function() {
+				app = new haste('CFX.in', { twitter: true });
+				handlePop({ target: window });
+			});
+		</script>
+
+	</head>
+
+	<body>
+    
+    <style>
+    .button1 {
+position: relative;
+background-color: #00ff88;
+border: 1px solid transparent;
+outline: none;
+font-size: 14px;
+color: #333;
+font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+padding: 2px;
+width: 80px;
+height: 40px;
+text-align: center;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+text-decoration: none;
+overflow: hidden;
+
+}
+.button1:after {
+content: "";
+background: #00ff88;
+display: block;
+position: absolute;
+padding-top: 90%;
+padding-right: 330%;
+margin-left: -10px !important;
+margin-top: -60%;
+opacity: 0;
+transition: all 0.8s;
+}
+
+.button1:active:after {
+padding: 0;
+margin: 0;
+opacity: 1;
+transition: 0s;
+}
+.button1:hover {
+background-color: transparent;
+color: #00ff88;
+border: 1px solid #00ff88;
+}
+      /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2f3136; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00ff88; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightgreen; 
+}
+    </style>
+    
+		<ul id="messages"></ul>
+
+		<div id="key"  style="border:2px solid #00ff88; border-radius:5px; box-shadow: 3px 3px 3px #000;">
+     <h1 align="center" style="color:#00ff88; font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; font-size:20px; border-bottom: 2px solid #00ff88; text-shadow:2px 2px 2px #000;">FENIX Development</h1>
+      <div id="pointer" style="display:none;"></div>
+			<div id="box2">
+				<button class="save function button1"></button>
+				<button class="new function button1"></button>
+				<button class="duplicate function button1"></button>
+				<button class="raw function button1"></button>
+			</div>
+			<div id="box3" style="display:none;">
+				<div class="label"></div>
+				<div class="shortcut"></div>
+			</div>
+		</div>
+
+		<div id="linenos"></div>
+		<pre id="box" style="display:none;" class="hljs" tabindex="0"><code></code></pre>
+		<textarea spellcheck="false" style="display:none;"></textarea>
+
+	</body>
+
+</html>
